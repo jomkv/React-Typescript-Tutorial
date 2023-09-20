@@ -6,7 +6,7 @@ type personProps = {
 }
 
 // Expected Props Example:
-// const persons = [
+// const personsArray = [
 //     {
 //         name: "walter",
 //         age: 58
@@ -20,8 +20,9 @@ type personProps = {
 //         age: 18
 //     }
 // ]
+// <PersonList persons={personsArray} />
 
-function Person(props: personProps) {
+function PersonList(props: personProps) {
   return (
     <>
         {props.persons.map(
@@ -33,4 +34,4 @@ function Person(props: personProps) {
   )
 }
 
-export default Person
+export default PersonList

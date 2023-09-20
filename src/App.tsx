@@ -3,7 +3,7 @@
 
 // Components
 import Greet from './components/3-typing-props/Greet'
-import Person from './components/4-basic-props/Person'
+import PersonList from './components/4-basic-props/PersonList'
 
 function App() {
   const personArray = [
@@ -25,7 +25,7 @@ function App() {
     <div className='container'>
       <Greet name="Jom" age={19}/>
       <br/>
-      <Person persons={personArray} />
+      <PersonList persons={personArray} />
     </div>
   );
 }
