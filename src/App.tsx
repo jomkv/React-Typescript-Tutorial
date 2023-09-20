@@ -1,5 +1,5 @@
 // Dependencies or External Imports
-import './App.css';
+
 
 // Components
 import Greet from './components/Greet'
