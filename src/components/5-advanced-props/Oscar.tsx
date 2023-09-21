@@ -1,8 +1,8 @@
-type oscarProps = {
+type OscarProps = {
   children: React.ReactNode
 }
 
-function Oscar(props: oscarProps) {
+function Oscar(props: OscarProps) {
   return (
     <div>{props.children}</div>
   )

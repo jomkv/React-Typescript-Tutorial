@@ -1,4 +1,4 @@
-type personProps = {
+type PersonProps = {
   persons: {
     name: string,
     age: number
@@ -22,7 +22,7 @@ type personProps = {
 // ]
 // <PersonList persons={personsArray} />
 
-function PersonList(props: personProps) {
+function PersonList(props: PersonProps) {
   return (
     <>
       {props.persons.map(

@@ -1,8 +1,8 @@
-type headingProps = {
+type HeadingProps = {
   children: string
 }
 
-function Heading(props: headingProps) {
+function Heading(props: HeadingProps) {
   return (
     <div>{props.children}</div>
   )

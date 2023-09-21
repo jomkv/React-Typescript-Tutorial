@@ -1,11 +1,11 @@
-type statusProps = {
+type StatusProps = {
     status: "loading" | "success" | "error"
 }
 
 // Expected Props Example:
 // <Status status="success" />
 
-function Status(props: statusProps) {
+function Status(props: StatusProps) {
   let message
 
   if(props.status === "loading") {

@@ -1,4 +1,4 @@
-type greetProps = {
+type GreetProps = {
     name: string,
     messageCount?: number,
     isLoggedIn: boolean,
@@ -9,7 +9,7 @@ type greetProps = {
 // or
 // <Greet name="your_name" isLoggedIn={true} />
 
-function Greet(props: greetProps) {
+function Greet(props: GreetProps) {
   const { messageCount = 0 } = props
   return (
     <>
