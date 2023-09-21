@@ -2,12 +2,12 @@
 
 
 // Components
-import Input from './components/6-event-props/Input'
+import Container from "./components/7-style-props/Container";
 
 function App() {
   return (
     <div className='container'>
-      <Input value="" />
+      <Container />
     </div>
   );
 }
