@@ -1,8 +1,7 @@
+import { Person } from './types/Person.types'
+
 type PersonProps = {
-  persons: {
-    name: string,
-    age: number
-  }[]
+  persons: Person[]
 }
 
 // Expected Props Example:

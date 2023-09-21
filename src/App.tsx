@@ -2,14 +2,28 @@
 
 
 // Components
-import StyleContainer from "./components/experiments/StyleContainer";
-import Text from "./components/experiments/Text";
+import PersonList from "./components/PersonList";
 
 function App() {
+  const personsArray = [
+    {
+      name: "walter",
+      age: 14
+    },
+    {
+      name: "white",
+      age: 42
+    },
+    {
+      name: "junior",
+      age: 18
+    }
+  ]
   return (
-    <StyleContainer styles={{color: 'red'}}>
-      <Text>Hello world</Text>
-    </StyleContainer>
+    <div className='container'>
+      
+    <PersonList persons={personsArray} />
+    </div>
   );
 }
 

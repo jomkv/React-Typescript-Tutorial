@@ -5,16 +5,16 @@ type StatusProps = {
 // Expected Props Example:
 // <Status status="success" />
 
-function Status(props: StatusProps) {
+function Status({status}: StatusProps) {
   let message
 
-  if(props.status === "loading") {
+  if(status === "loading") {
     message = "Loading..."
   } 
-  else if(props.status === "success") {
+  else if(status === "success") {
     message = "Data fetch successful"
   }
-  else if(props.status === "error") {
+  else if(status === "error") {
     message = "Error fetching data"
   }
 
