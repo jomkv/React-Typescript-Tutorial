@@ -5,7 +5,9 @@ type greetProps = {
 }
 
 // Expected Props Example:
-// <Greet name="your_name" age={your_age} />
+// <Greet name="your_name" isLoggedIn={true} messageCount={any_number} />
+// or
+// <Greet name="your_name" isLoggedIn={true} />
 
 function Greet(props: greetProps) {
   const { messageCount = 0 } = props
