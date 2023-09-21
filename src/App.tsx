@@ -2,13 +2,14 @@
 
 
 // Components
-import Container from "./components/7-style-props/Container";
+import StyleContainer from "./components/experiments/StyleContainer";
+import Text from "./components/experiments/Text";
 
 function App() {
   return (
-    <div className='container'>
-      <Container />
-    </div>
+    <StyleContainer styles={{color: 'red'}}>
+      <Text>Hello world</Text>
+    </StyleContainer>
   );
 }
 
