@@ -2,12 +2,12 @@
 
 
 // Components
-import Greet from './components/5-advanced-props/Greet'
+import Input from './components/6-event-props/Input'
 
 function App() {
   return (
     <div className='container'>
-      <Greet isLoggedIn={true} name="Jom" />
+      <Input value="" />
     </div>
   );
 }
