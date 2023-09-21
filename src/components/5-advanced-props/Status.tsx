@@ -19,7 +19,7 @@ function Status(props: statusProps) {
   }
 
   return (
-    <h1>Status: {props.status}</h1>
+    <h1>Status: {message}</h1>
   )
 }
 
