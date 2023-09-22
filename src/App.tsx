@@ -2,13 +2,13 @@
 
 
 // Components
-import User from "./components/state/User";
+import Counter from "./components/state/Counter";
 
 function App() {
   
   return (
     <div className='container'>  
-      <User />
+      <Counter />
     </div>
   );
 }
