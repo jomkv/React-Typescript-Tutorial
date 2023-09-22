@@ -8,7 +8,7 @@ type AuthUser = {
 function User() {
   // < AuthUser | null > tells useState that its state value can either be null or AuthUser
   // useful if your initial value is different type to its future value
-  const [user, setUser] = useState< AuthUser | null >(null)
+  const [user, setUser] = useState< AuthUser >({} as AuthUser)
 
   const handleLogin = () => {
     setUser({
@@ -17,14 +17,9 @@ function User() {
     })
   }
 
-  const handleLogout = () => {
-    setUser(null);
-  }
-
   return (
     <>
       <button onClick={handleLogin}>Login</button>
-      <button onClick={handleLogout}>Logout</button>
       {user 
       ? <> 
         <div>User name is {user.name}</div>
