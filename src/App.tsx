@@ -2,13 +2,16 @@
 
 
 // Components
-import Counter from "./components/state/Counter";
+import ThemeContextProvider from "./components/context/ThemeContext"
+import Body from "./components/context/Body"
 
 function App() {
   
   return (
     <div className='container'>  
-      <Counter />
+      <ThemeContextProvider>
+        <Body />
+      </ThemeContextProvider>
     </div>
   );
 }
