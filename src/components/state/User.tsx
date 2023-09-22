@@ -6,7 +6,7 @@ type AuthUser = {
 }
 
 function User() {
-  // < AuthUser | null > tells useState that it can either be null or AuthUser
+  // < AuthUser | null > tells useState that its state value can either be null or AuthUser
   // useful if your initial value is different type to its future value
   const [user, setUser] = useState< AuthUser | null >(null)
 
