@@ -2,16 +2,16 @@
 
 
 // Components
-import User from "./components/context/User"
-import UserContextProvider from "./components/context/UserContext"
+import Counter from "./components/experiments/Counter"
+import CounterContextProvider from "./components/experiments/CounterContex"
 
 function App() {
   
   return (
     <div className='container'>  
-      <UserContextProvider>
-        <User />
-      </UserContextProvider>
+      <CounterContextProvider>
+        <Counter />
+      </CounterContextProvider>
     </div>
   );
 }
