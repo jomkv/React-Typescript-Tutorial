@@ -2,16 +2,16 @@
 
 
 // Components
-import ThemeContextProvider from "./components/context/ThemeContext"
-import Body from "./components/context/Body"
+import User from "./components/context/User"
+import UserContextProvider from "./components/context/UserContext"
 
 function App() {
   
   return (
     <div className='container'>  
-      <ThemeContextProvider>
-        <Body />
-      </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
