@@ -2,13 +2,13 @@
 
 
 // Components
-import MutableRef from "./components/ref/MutableRef"
+import { Counter } from "./components/class/Counter";
 
 function App() {
   
   return (
     <div className='container'>  
-      <MutableRef/>
+      <Counter message="Your count is: " />
     </div>
   );
 }
