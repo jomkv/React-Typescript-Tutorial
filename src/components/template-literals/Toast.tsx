@@ -2,7 +2,7 @@ type HorizontalPosition = "left" | "center" | "right"
 type VerticalPosition = "top" | "center" | "bottom"
 
 type ToastProps = {
-  position: `${VerticalPosition}-${HorizontalPosition}`
+  position: Exclude<`${VerticalPosition}-${HorizontalPosition}`, 'center-center'> | 'center'
 }
 
 function Toast({position}: ToastProps) {

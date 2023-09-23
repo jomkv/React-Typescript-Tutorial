@@ -8,7 +8,7 @@ function App() {
   
   return (
     <div className='container'>  
-      <Toast position="top-right" />
+      <Toast position="center" />
     </div>
   );
 }
