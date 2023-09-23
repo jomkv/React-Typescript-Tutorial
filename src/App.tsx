@@ -2,15 +2,15 @@
 
 
 // Components
-import Button from "./components/html/Button";
-import Input from "./components/html/Input";
+import Text from "./components/polymorphic/Text";
 
 function App() {
   
   return (
     <div className='container'>  
-      <Button variant="secondary" onClick={() => {console.log("click")}}>asd</Button>
-      <Input type="text" placeholder="input here"/>
+      <Text as="h1" size="sm" color="primary" >H1</Text>
+      <Text as="p">Paragraph</Text>
+      <Text as="label" htmlFor="someId">Label</Text>
     </div>
   );
 }
