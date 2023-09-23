@@ -2,16 +2,13 @@
 
 
 // Components
-import Counter from "./components/experiments/Counter"
-import CounterContextProvider from "./components/experiments/CounterContex"
+import DomRef from "./components/ref/DomRef"
 
 function App() {
   
   return (
     <div className='container'>  
-      <CounterContextProvider>
-        <Counter />
-      </CounterContextProvider>
+      <DomRef/>
     </div>
   );
 }
