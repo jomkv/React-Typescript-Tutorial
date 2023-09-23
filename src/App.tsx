@@ -2,13 +2,15 @@
 
 
 // Components
-import Toast from "./components/template-literals/Toast";
+import Button from "./components/html/Button";
+import Input from "./components/html/Input";
 
 function App() {
   
   return (
     <div className='container'>  
-      <Toast position="center" />
+      <Button variant="secondary" onClick={() => {console.log("click")}}>asd</Button>
+      <Input type="text" placeholder="input here"/>
     </div>
   );
 }
