@@ -2,13 +2,13 @@
 
 
 // Components
-import RandomNumber from "./components/restriction/RandomNumber";
+import Toast from "./components/template-literals/Toast";
 
 function App() {
   
   return (
     <div className='container'>  
-      <RandomNumber value={10} isNegative />
+      <Toast position="top-right" />
     </div>
   );
 }
