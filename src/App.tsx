@@ -8,17 +8,18 @@ function App() {
   
   return (
     <div className='container'>  
-      <List items={["a", "b", "c", "d"]} onClick={(item) => {console.log(item)}}/>
-      <List items={[1, 2, 3, 4]} onClick={(item) => {console.log(item)}}/>
       <List 
         items={[
           {
+            id: 1,
             name: "Jom",
           },
           {
+            id: 2,
             name: "Ye",
           },
           {
+            id: 3,
             name: "Gra",
           }
         ]} 
